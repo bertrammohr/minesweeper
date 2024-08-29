@@ -1,0 +1,40 @@
+body {
+    overflow: scroll;
+}
+
+.board {
+    display: flex;
+    margin: 10px;
+}
+
+.square {
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.checked {
+    background-color: white;
+}
+
+.mine {
+    content: url(mine.png);
+}
+
+.mine-clicked {
+    background-color: red;
+}
+
+.flag {
+    content: url(flag.png);
+}
+
+.flaggedMine {
+    content: url(flaggedMine.png);
+}

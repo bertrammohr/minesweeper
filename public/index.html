@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Mohr Minesweeper</h1>
+    
+    <div id="settings">
+        <h3>Standard Game</h3>
+        
+        <button onclick="startGame('Easy')">Easy</button>
+        <button onclick="startGame('Medium')">Medium</button>
+        <button onclick="startGame('Hard')">Hard</button>
+
+        <h3>Custom Game</h3>
+        <label for="sizeX">SizeX</label>
+        <input type="number" id="sizeX" value="10">
+
+        <label for="sizeY">SizeY</label>
+        <input type="number" id="sizeY" value="10">
+
+        <label for="mineCount">MineCount</label>
+        <input type="number" id="mineCount" value="10">
+
+
+        <h3>Start</h3>
+        <button onclick="startGame()">Start</button>
+    </div>
+
+    <div id="board" class="board">
+        
+    </div>
+
+</body>
+</html>
